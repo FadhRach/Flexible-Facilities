@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.bunny.net/css?family=plus-jakarta-sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i);
+
+html{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bg-custom-gradient-keluar{
+    background: linear-gradient(180deg, #363045 -10.22%, #463F57 56.28%, #5B536F 107.99%, #5B536F 107.99%);
+}
+.bg-custom-gradient-pinjam{
+    background: linear-gradient(180deg, #B2836B -10.22%, #9C7260 56.28%, #61453E 107.99%, #61453E 107.99%);
+}
+.bg-custom-gradient-inv{
+    background: linear-gradient(180deg, #598072 -10.22%, #3F655C 56.28%, #193E3E 107.99%, #193E3E 107.99%);
+}
+.bg-custom-inv{
+    background-color: #3F655C;
+}
+.bg-custom-pnjm{
+    background-color: #61453E;
+}
+.bg-custom-klr{
+    background-color: #5B536F;
+}
+
