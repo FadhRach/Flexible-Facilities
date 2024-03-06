@@ -13,6 +13,7 @@ class kibfview extends Model
     protected $table = "ruangan";
     protected $guarded = [];
     protected $primaryKey = 'id_ruangan';
+    protected $fillable = ["id_ruangan","nama_ruangan","statpinjam","foto_ruang"];
     public function relkibb()
     {
         return $this->hasMany(kibbview::class, 'id_ruangan');

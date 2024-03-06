@@ -90,7 +90,7 @@
                             </th>
                             <td scope="row"
                                 class="px-4 py-4">
-                                {{ $pb->barang->ruangan->nama_ruangan }}
+                                {{ $pb->barang->relkibf->nama_ruangan }}
                             </td>
                             <td class="px-4 py-4">
                                 {{ $pb->deskripsi }}

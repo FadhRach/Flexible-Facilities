@@ -17,6 +17,7 @@ class kibbview extends Model
     protected $table = "barang";
     protected $guarded = [];
     protected $primaryKey = 'id_barang';
+    protected $fillable = ["id_barang","kode_barang","nama_barang","register","id_ruangan","merk_type","tahun","jumlah_barang","harga","nilai","akumulasi","keterangan","status_barang","inven_brg"];
 
     public function relkibf()
     {

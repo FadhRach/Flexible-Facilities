@@ -69,7 +69,7 @@
                                     {{ $b->merk_type }}
                                 </td>   
                                 <td class="px-6 py-4">
-                                    {{ $b->ruangan->nama_ruangan }}
+                                    {{ $b->relkibf->nama_ruangan }}
                                 </td>
                                 <td class="px-6 py-4">
                                     @if ($b->status_barang === 'baik')

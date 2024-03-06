@@ -56,7 +56,7 @@
 
                 initialView: 'dayGridMonth',
                 events: [
-                    @foreach ($pinjamtempat as $pt)
+                    @foreach ($pinjam_tempat as $pt)
                         {
                             title: '{{ $pt->ruangan->nama_ruangan }}',
                             start: '{{ $pt->time_from }}',

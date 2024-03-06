@@ -47,9 +47,6 @@
                                 Asal Ruangan
                             </th>
                             <th scope="col" class="px-4 py-3">
-                                Merk
-                            </th>
-                            <th scope="col" class="px-4 py-3">
                                 Action
                             </th>
                         </tr>
@@ -61,13 +58,10 @@
                                 {{ $b->nama_barang }}
                             </th>
                             <td class="px-4 py-4">
-                                {{ $b->register }}
+                                {{ $b->nomor_unik }}
                             </td>
                             <td class="px-4 py-4">
-                                {{ $b->ruangan->nama_ruangan }}
-                            </td>
-                            <td class="px-4 py-4">
-                                {{ $b->merk_type }}
+                                {{ $b->relkibf->nama_ruangan }}
                             </td>
                             <td class="px-4 py-4">
                                 <a href="/pinjamuserbarangform/{{ $b->id_barang }}" class="font-bold text-yellow-600 dark:text-yellow-500 hover:underline">Pinjam</a>

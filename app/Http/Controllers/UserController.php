@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\kibbview;
+use App\Models\kibfview;
+use App\Models\pinjam_barang;
+use App\Models\pinjam_tempat;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -99,4 +103,13 @@ class UserController extends Controller
         return view("pages.admin.infouser",["user"=> $user]);
     }
 
+    public function historypinjam($id_user)
+    {   
+        $pinjam_tempat = pinjam_tempat::where('id_user', $id_user)->get();
+        $pinjam_barang = pinjam_barang::where('id_user', $id_user)->get();
+        $ruangan = kibfview::all();
+        $barang = kibbview::all();
+        $user = User::all();
+        return view("pages.pinjam.user.historypinjam", compact('pinjam_tempat', 'pinjam_barang','barang', 'ruangan', 'user'));
+    }
 }

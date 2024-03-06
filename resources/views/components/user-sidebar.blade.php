@@ -20,9 +20,9 @@
             </a>
         </li>
         <li>
-            <a href="/pinjamusercalendar" class="flex items-center ml-1 p-2 text-gray-50 rounded-lg dark:text-white hover:bg-[#B4846C] dark:hover:bg-[#B4846C] group">
+            <a href="/historypinjam/{{ Auth::user()->id_user }}" class="flex items-center ml-1 p-2 text-gray-50 rounded-lg dark:text-white hover:bg-[#B4846C] dark:hover:bg-[#B4846C] group">
                 <img src="{{ asset('img/logo-peminjaman.gif') }}" alt="" class="h-7">
-                <span class="flex-1 ml-3 whitespace-nowrap">Calendar Sarpras</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">Booking Sarpras</span>
             </a>
         </li>
         <li>
@@ -35,7 +35,7 @@
             </button>
             <ul id="dropdown-example" class="hidden py-1 space-y-2">
                   <li>
-                    <a href="/pinjamusersarpras" class="flex items-center ml-8 p-2 text-gray-50 rounded-lg dark:text-white hover:bg-[#B4846C] dark:hover:bg-[#B4846C] group">
+                    <a href="/pinjamusertempat" class="flex items-center ml-8 p-2 text-gray-50 rounded-lg dark:text-white hover:bg-[#B4846C] dark:hover:bg-[#B4846C] group">
                         <img src="{{ asset('img/logo-sarpras.gif') }}" alt="" class="h-5">
                         <span class="flex-1 ml-3 whitespace-nowrap">Sarpras</span>
                     </a>

@@ -12,6 +12,7 @@ class pinjam_barang extends Model
     protected $primaryKey = "id_pinjambarang";
     protected $fillable = ["id_pinjambarang","id_user","id_barang","deskripsi","time_from","time_to","status_acc"];
 
+
     public function barang() 
     { 
         return $this->belongsTo(kibbview::class,'id_barang'); 

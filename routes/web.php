@@ -88,6 +88,7 @@ Route::middleware(['auth'])->group(function () {
 
     // Profile User
     Route::get('/profile/{id}',[UserController::class,'profileuser'])->middleware('userAkses:user');
+    Route::get('/historypinjam/{id}', [UserController::class,'historypinjam'])->middleware('userAkses:user');
 
 
     // Keluar Masuk
