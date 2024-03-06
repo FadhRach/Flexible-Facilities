@@ -1,4 +1,4 @@
-<!doctype html>
+!doctype html>
 <html>
 
 <head>
@@ -19,22 +19,8 @@
                 <img src="{{ asset('img/asset-decorone.png') }}" alt="" class="h-12">
                 <h2 class="font-semibold text-purple-950 text-2xl">Response Barang</h2>
             </span>
-            <div class="pb-4 dark:bg-gray-900 ml-2">
-                <label for="table-search" class="sr-only">Search</label>
-                <div class="relative mt-1">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
-                    </div>
-                    <input type="text" id="table-search"
-                        class="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Search for Response">
-                </div>
-            </div>
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+
+            <table class="w-full text-sm text-left mt-5 text-gray-500 dark:text-gray-400">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="px-2 py-3">
@@ -57,12 +43,6 @@
                         </th>
                         <th scope="col" class="px-4 py-3">
                             Waktu Pinjam Akhir
-                        </th>
-                        <th scope="col" class="px-4 py-3">
-                            Status
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Aksi
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Pengaturan
@@ -100,27 +80,6 @@
                             </td>
                             <td class="px-4 py-4">
                                 {{ $pb->time_to }}
-                            </td>
-                            <td class="px-4 py-4">
-                                @if ($pb->status_acc === 'diterima')
-                                    <span class="text-green-500">{{ $pb->status_acc }}</span>
-                                @elseif ($pb->status_acc === 'ditolak')
-                                    <span class="text-red-500">{{ $pb->status_acc }}</span>
-                                @elseif ($pb->status_acc === 'pengajuan')
-                                    <span class="text-yellow-500">{{ $pb->status_acc }}</span>
-                                @else
-                                    {{ $pb->status_acc }}
-                                @endif
-                            </td>
-                            <td class="px-6 py-3">
-                                <a href="/pinjamresponse/prasarana/diterima/{{ $pb->id_pinjambarang }}"
-                                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg inline-block text-center w-24">
-                                    Diterima
-                                </a>
-                                <a href="/pinjamresponse/prasarana/ditolak/{{ $pb->id_pinjambarang }}"
-                                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg inline-block text-center w-24">
-                                    Ditolak
-                                </a>
                             </td>
                             <td class="px-6 py-3">
                                 <a href="/pinjamresponse/prasarana/edit/{{ $pb->id_pinjambarang }}"

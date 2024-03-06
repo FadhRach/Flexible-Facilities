@@ -5,7 +5,7 @@
     <x-app />
 </head>
 
-<body>
+<body class="bg-yellow-50">
     <!-- Sidebar Start -->
     <x-user-sidebar />
     <!-- Sidebar End -->
@@ -18,7 +18,7 @@
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
             <h1 class="text-center font-medium text-black text-2xl">HISTORY PINJAM RUANGAN</h1>
             <table class="w-full mx-auto text-sm text-left text-gray-500 dark:text-gray-400 mt-5 mb-10">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <thead class="text-xs text-[#f1f1f1] uppercase bg-[#9C7260] dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="px-6 py-3">
                             Pinjam Ruangan/Barang
@@ -71,7 +71,7 @@
             <br><br><br>
             <h1 class="text-center font-medium text-black text-2xl">HISTORY PINJAM BARANG</h1>
             <table class="w-full mx-auto text-sm text-left text-gray-500 dark:text-gray-400 mt-5 mb-10">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <thead class="text-xs text-[#f1f1f1] uppercase bg-[#9C7260] dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="px-6 py-3">
                             Pinjam Ruangan/Barang
@@ -84,9 +84,6 @@
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Pinjam Sampai
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Status
                         </th>
                     </tr>
                 </thead>
@@ -105,17 +102,6 @@
                             </td>
                             <td class="px-6 py-4">
                                 {{ $pb->time_to }}
-                            </td>
-                            <td class="px-6 py-4">
-                                @if ($pb->status_acc === 'diterima')
-                                    <span class="text-green-500">{{ $pb->status_acc }}</span>
-                                @elseif ($pb->status_acc === 'ditolak')
-                                    <span class="text-red-500">{{ $pb->status_acc }}</span>
-                                @elseif ($pb->status_acc === 'pengajuan')
-                                    <span class="text-yellow-500">{{ $pb->status_acc }}</span>
-                                @else
-                                    {{ $pb->status_acc }}
-                                @endif
                             </td>
                         </tr>
                     @endforeach

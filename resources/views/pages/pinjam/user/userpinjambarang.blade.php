@@ -18,20 +18,6 @@
                 <h2 class="font-semibold text-yellow-800 text-2xl">Pinjam Barang</h2>
             </span>
 
-            <!-- Search -->
-            <div class="p-4 bg-yellow-50 dark:bg-gray-900">
-                <label for="table-search" class="sr-only">Search</label>
-                <div class="relative mt-1">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-[#9C7260] dark:text-[#9C7260]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                        </svg>
-                    </div>
-                    <input type="text" id="table-search" class="block p-2 pl-10 text-sm text-gray-900 border border-[#9C7260] rounded-lg w-80 bg-white focus:ring-yellow-500 focus:border-yellow-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-500 dark:focus:border-yellow-500" placeholder="Cari Sarpras">
-                </div>
-            </div>
-            <!-- Search -->
-
             <!-- Table Start -->
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-5">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
